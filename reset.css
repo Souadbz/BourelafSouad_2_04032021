@@ -12,8 +12,10 @@
     -webkit-animation-delay: -1ms;
     animation-delay: -1ms;
     -webkit-animation-duration: 1ms;
+    -moz-transition-duration: 1ms;
     animation-duration: 1ms;
     -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
     animation-iteration-count: 1;
     background-attachment: initial;
     scroll-behavior: auto;
@@ -117,10 +119,15 @@ html {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell,
     "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
   color: inherit;
   background-color: inherit;
   -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
 }
 article,
 aside,
@@ -205,9 +212,11 @@ p {
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
+  -moz-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
   -webkit-text-decoration-skip-ink: none;
+  -moz-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 address {
@@ -426,9 +435,10 @@ textarea {
   line-height: inherit;
 }
 button,
+input,
 select,
 textarea {
-  background-color: black;
+  background-color: transparent;
   border: 1px solid WindowFrame;
   color: inherit;
   font: inherit;
@@ -462,6 +472,7 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  -moz-appearance: button;
 }
 button:not(disabled),
 [type="button"]:not(disabled),
@@ -472,6 +483,7 @@ button:not(disabled),
 ::-webkit-file-upload-button {
   font: inherit;
   -webkit-appearance: button;
+  -moz-appearance: button;
 }
 textarea {
   overflow: auto;
@@ -524,19 +536,29 @@ dialog:not([open]) {
   display: none;
 }
 ::-webkit-datetime-edit-fields-wrapper,
+::-moz-datetime-edit-fields-wrapper,
 ::-webkit-datetime-edit-text,
+::-moz-datetime-edit-text,
 ::-webkit-datetime-edit-minute,
+::-moz-datetime-edit-minute,
 ::-webkit-datetime-edit-hour-field,
+::-moz-datetime-edit-hour-field,
 ::-webkit-datetime-edit-day-field,
+::-moz-datetime-edit-day-field,
 ::-webkit-datetime-edit-month-field,
-::-webkit-datetime-edit-year-field {
+::-moz-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field,
+::-moz-datetime-edit-year-field {
   padding: 0;
 }
 ::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
+::-moz-inner-spin-button,
+::-webkit-outer-spin-button,
+::-moz-outer-spin-button {
   height: auto;
 }
-::-webkit-input-placeholder {
+::-webkit-input-placeholder,
+::-moz-input-placeholder {
   color: inherit;
   opacity: 0.54;
 }
@@ -547,9 +569,13 @@ dialog:not([open]) {
   box-sizing: content-box;
 }
 input[type="search"]::-webkit-search-cancel-button,
+::-moz-search-cancel-button,
 input[type="search"]::-webkit-search-decoration,
+::-moz-search-decoration,
 input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
+::-moz-search-results-button,
+input[type="search"]::-webkit-search-results-decoration,
+::-moz-search-results-decoration {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
