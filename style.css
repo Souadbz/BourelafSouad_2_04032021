@@ -13,9 +13,8 @@ a {
   text-decoration: none;
 }
 /***HEADER***/
-
 header {
-  max-width: 1660px;
+  max-width: 1450px;
   margin: auto;
   display: grid !important;
   align-items: center;
@@ -25,12 +24,12 @@ header a {
 }
 .logo {
   height: 3rem;
-  grid-area: symbol !important;
+  grid-area: symbol ;
 }
 .menu {
   display: flex;
   align-items: center;
-  grid-area: menu !important;
+  grid-area: menu;
 }
 .menu-left-center {
   padding: 3rem;
@@ -52,7 +51,7 @@ header a {
   text-align: center;
   color: black;
   font-size: 19px;
-  font-weight: bold;
+  font-weight: 500;
 }
 #menu-center:hover {
   color: #0065fc;
@@ -60,7 +59,7 @@ header a {
 .menu-right {
   display: flex;
   align-items: center;
-  grid-area: butt !important;
+  grid-area: butt;
   padding: 2rem;
   font-size: 19px;
   color: #0065fc;
@@ -162,7 +161,7 @@ header a {
 }
 /***Titre principale***/
 .main-title {
-  margin-left: 185px;
+  margin-left: 280px;
 }
 .main-title h4 {
   font-size: 26px;
@@ -202,7 +201,7 @@ header a {
 form {
   display: flex;
   margin-top: 20px;
-  margin-left: 125px;
+  margin-left: 215px;
   overflow: auto;
 }
 .map-marker {
@@ -266,8 +265,7 @@ form span {
  }
  form span {
   display: none;
-}
-
+ }
 }
 @media screen and (min-width: 345px) and (max-width: 610px) {
   form {
@@ -321,12 +319,12 @@ form span {
   flex-wrap: wrap;
   margin-top: 35px;
   margin-bottom: 30px;
-  margin-left: 170px;
+  margin-left: 260px;
 }
 .filter h5 {
   margin: 30px 30px 30px 15px;
-  font-weight: bolder;
-  font-size: 22px;
+  font-weight: 800;
+  font-size: 18px;
 }
 .list-filter {
   display: flex;
@@ -334,7 +332,7 @@ form span {
   flex-wrap: wrap;
 }
 .items-filter {
-  height: 70px;
+  height: 50px;
   margin: 10px 20px 10px 0px;
   border: 3px solid #f2f2f2;
   border-radius: 33px;
@@ -351,9 +349,9 @@ form span {
   align-items: center;
   background-color: #deebff;
   border-radius: 100%;
-  width: 70px;
-  height: 70px;
-  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
   color: #0065fc;
 }
 @media screen and (max-width: 610px) {
@@ -386,12 +384,12 @@ form span {
  @media screen and (min-width: 955px) and (max-width: 1090px){
    .filter{
      margin-left: 40px;
-   }
- }
+    }
+  }
 /***NOMBRE DE LOGEMENTS***/
 .number-of-housings {
   display: flex;
-  margin-left: 180px;
+  margin-left: 260px;
   margin-bottom: 40px;
   align-content: center;
 }
@@ -446,16 +444,16 @@ p {
 }
 /***SECTION LES PLUS POPULAIRES ***/
 .aside-popular {
-  width: 30%;
-  height: 750px;
+  width: 32%;
+  height: 700px;
   float: right;
-  margin-right: 70px;
+  margin-right: 90px;
 }
 .popular {
   display: flex;
   flex-direction: column;
-  width: 83%;
-  height: 750px;
+  width: 72%;
+  height: 700px;
   padding: 25px;
   border-radius: 20px;
   background: #f2f2f2;
@@ -473,11 +471,11 @@ p {
   margin-bottom: 30px;
   margin-left: 38px;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 25px;
 }
 .title-popular i {
   margin-left: -60px;
-  font-size: 27px;
+  font-size: 23px;
   color: black;
 }
 .room-popular-description {
@@ -493,7 +491,7 @@ p {
   transition: 0.3s;
 }
 .room-popular-description-img {
-  width: 147px;
+  width: 138px;
   height: 159px;
   margin: 5px;
   margin-top: 5px;
@@ -504,16 +502,16 @@ p {
   margin-left: 12px;
 }
 .title-room-popular {
-  width: 190px;
+  width: 155px;
   margin-top: 15px;
   margin-left: 8px;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 700;
 }
 .paragraph-room-popular {
   margin-left: 9px;
   margin-top: 10px;
-  font-size: 17px;
+  font-size: 15px;
 }
 .popular-blue-star,
 .popular-grey-star {
@@ -522,7 +520,7 @@ p {
   margin-top: 30px;
   border: none;
   text-indent: 4px;
-  font-size: 14px;
+  font-size: 13px;
 }
 .popular-blue-star {
   color: #0065fc;
@@ -555,7 +553,7 @@ p {
   }
   .room-popular-description{
     width: 100%; 
-    height: 180px;
+    height: 170px;
     margin-left: 3px;
     margin-bottom: 30px;
   }
@@ -701,9 +699,9 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 55%;
-  height: 750px;
-  margin-left: 170px;
+  width: 48%;
+  height: 700px;
+  margin-left: 250px;
   background: #f2f2f2;
   border-radius: 20px;
   padding: 15px;
@@ -713,11 +711,11 @@ p {
   margin-left: 17px;
   padding: 15px;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 25px;
 }
 .location {
-  width: 300px;
-  height: 240px;
+  width: 250px;
+  height: 210px;
   margin-left: 32px;
   margin-bottom: 40px;
   margin-right: 25px;
@@ -733,7 +731,7 @@ p {
   object-fit: cover;
   box-sizing: border-box;
   border-radius: 25px 25px 0 0;
-  height: 132px;
+  height: 110px;
 }
 
 .annonce {
@@ -742,14 +740,14 @@ p {
 .annonce h4 {
   margin-top: 8px;
   margin-left: 10px;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 700;
 }
 .annonce p {
-  font-size: 17px;
+  font-size: 15px;
 }
 .star {
-  font-size: 14px;
+  font-size: 13px;
   margin-top: -10px;
   margin-left: 10px;
 }
@@ -854,7 +852,8 @@ p {
 .activity-title {
   grid-column: 1/-1;
   margin-bottom: 25px;
-  font-size: 26px;
+  margin-left: 10px;
+  font-size: 25px;
   font-weight: 700;
 }
 .activity-image {
@@ -884,22 +883,22 @@ p {
   color: black;
   font-weight: 700;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1110px) {
   .activity {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 12.3rem 2rem 1rem 0.5rem 15rem;
+    grid-template-rows: auto 12.5rem 2rem 1rem 0.5rem 15rem;
     column-gap: 4rem;
     row-gap: 1rem;
-    width: 83%;
-    margin: 60px 0px 60px 160px;
+    width: 75%;
+    margin: 60px 235px 60px;
   }
   .activity-image1 {
     grid-row: 2 / 7;
     grid-column: 1 / 2;
-  }
+  };
   .activity-image2 {
     grid-column: 2 / 3;
-    grid-row: 2 / 5;
+    grid-row: 2 / 5
   }
   .activity-image3 {
     grid-column: 3 / 4;
@@ -987,7 +986,15 @@ footer {
 .footer-first, .footer-second, .footer-third {
   width: 30%;
   padding: 1rem;
-  margin-left: 90px;
+}
+.footer-first{
+ margin-left: 225px;
+}
+.footer-second{
+  margin-left: -80px;
+}
+.footer-third{
+  margin-left: -90px;
 }
 .list-footer-first, .list-footer-second, .list-footer-third {
   height: 5rem;
@@ -1000,22 +1007,23 @@ footer {
   color: black;
 }
 .title-footer {
-  margin-left: 3rem;
-  font-size: 23px;
+  margin-left: rem;
+  font-size: 21px;
   font-weight: 700;
 }
 .title-liste-item-footer {
-  margin-left: 15px;
-  font-size: 20px;
+  margin-left: -35px;
+  font-size: 18px;
 }
 @media screen and (max-width: 720px){
   footer{
     height: 100%;
+    width: 700px;
     display: flex;
     flex-direction: column;
   }
   .footer-first, .footer-second, .footer-third{
-    margin-left: -25px;
+    margin-left: 25px;
     margin-bottom: 2rem;
   }
   .title-footer{
@@ -1048,7 +1056,7 @@ footer {
     font-size: 17px;
   }
  }
- @media screen and (min-width: 955px)and (max-width: 1090px) {
+ @media screen and (min-width: 955px)and (max-width: 1110px) {
    footer{
      height: 410px;
    }
