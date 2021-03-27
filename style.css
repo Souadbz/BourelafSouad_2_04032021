@@ -141,7 +141,6 @@ header a {
             order: 0;
   }
   .menu-right {
-    margin-right: px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -160,7 +159,6 @@ header a {
   }
   #menu-left {
     width: 50%;
-    padding-left: px;
     border-top: none;
     border-bottom: 3px solid #0065fc;
     font-size: 15px;
@@ -878,7 +876,15 @@ p {
     width: 330px;
   }
  }
-
+ @media screen and (min-width: 1091px) and (max-width: 1209px){
+  .title-popular h2 {
+    font-size: 18px;
+    margin-left: 15px;
+  }
+  .title-popular i {
+    font-size: 20px;
+  }
+}
 /***SECTION HEBERGEMENTS A MARSEILLE***/
 
 .hosting {
@@ -891,8 +897,6 @@ p {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 60.5%;
-  height: 670px;
   margin-left: 80px;
   background: #f2f2f2;
   border-radius: 20px;
@@ -906,8 +910,6 @@ p {
   font-size: 24px;
 }
 .location {
-  width: 240px;
-  height: 200px;
   margin-left: 25px;
   margin-bottom: 40px;
   margin-right: 25px;
@@ -966,19 +968,6 @@ p {
   font-size: 18px;
   font-weight: 700;
 }
-@media screen and (max-width: 991px) {
-  .hostin {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 @media screen and (max-width: 611px) {
   .hosting {
     display: contents;
@@ -1003,7 +992,7 @@ p {
     transition: 0.3s ease-in-out;
   }
   .location img {
-    height: 115px;
+    height: 50px;
   }
   .annonce h4 {
     font-size: 16px;
@@ -1022,27 +1011,6 @@ p {
   }
 }
 @media screen and (min-width: 700px) and (max-width: 950px){
-  .hostin{
-    width: 750px;
-    height: 830px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    background: none;
-    margin-left: 50px;
-  }
-  .locatio{
-    width: 32%;
-    margin-left: -15px;
-    -webkit-box-shadow: 0px 0px 3px #d8d8d8;
-            box-shadow: 0px 0px 3px #d8d8d8;
-  }
   .hosting {
     width: 760px; 
     height: 950px;
@@ -1071,25 +1039,70 @@ p {
      padding: 2px;
    }
  }
- @media screen and (min-width: 1091px) and (max-width: 1487px){
+ @media screen and (min-width: 1091px) and (max-width: 1209px){
   .hosting {
-    width: 50%; 
-    height: 650px;
-    margin-left: 1px; 
+    width: 60%; 
+    height: 670px;
     margin-top: 40px;
   }
   .location {
-    width: 270px;
-    height:;
+    width: 155px;
+    height: 180px;
     padding: 2px;
   }
-  .hosting h2{
-    margin-bottom: 20px;
-    margin-top: 0px;
-    margin-left: -20px;
-    font-size: 21px;
+  .location img{
+    width: 100%;
   }
+  .annonce h4 {
+    font-size: 14px;
+  }
+  .annonce p {
+    font-size: 12px;
+  }
+  .star {
+    font-size: 9px;
+  }
+  .hosting h3 {
+    font-size: 18px;
+    }
  }
+ @media screen and (min-width: 1210px) and (max-width: 1487px){
+  .hosting {
+    width: 60%; 
+    height: 670px;
+    margin-top: 40px;
+  }
+  .location {
+    width: 180px;
+    height: 180px;
+    padding: 2px;
+  }
+  .location img{
+    width: 100%;
+  }
+  .annonce h4 {
+    font-size: 14px;
+  }
+  .annonce p {
+    font-size: 12px;
+  }
+  .star {
+    font-size: 9px;
+  }
+  .hosting h3 {
+    font-size: 18px;
+    }
+ }
+ @media screen and (min-width: 1488px){
+  .hosting{ 
+   width: 60.5%;
+   height: 670px;
+  }
+  .location{
+   width: 240px;
+   height: 200px;
+  }
+}
 /***SECTION LES ACTIVITES***/
 
 .activity {
@@ -1145,10 +1158,10 @@ p {
   .activity-image1 {
     grid-row: 2 / 7;
     grid-column: 1 / 2;
-  };
+  }
   .activity-image2 {
     grid-column: 2 / 3;
-    grid-row: 2 / 5
+    grid-row: 2 / 5;
   }
   .activity-image3 {
     grid-column: 2/3;
@@ -1226,8 +1239,6 @@ p {
     margin-top: 50px;
   }
 }
-
-
 /****FOOTER****/
 footer {
   height: 250px;
