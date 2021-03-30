@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 body {
+  width: 100%;
   font-family: "Raleway", "sans-serif";
   margin: auto;
-  padding: auto;
+  padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
@@ -17,7 +18,8 @@ a {
   margin: auto;
   width: 100%;
 }
-/***HEADER2***/
+
+/***HEADER***/
 header {
   margin: auto;
   display: -ms-grid !important;
@@ -218,6 +220,7 @@ header a {
     margin-left: 5px;
   }
 }
+
 /***Titre principale***/
 .main-title {
   margin-top: 1rem;
@@ -238,18 +241,21 @@ header a {
   .main-title h4 {
     width: 90%;
     margin-top: 20px;
-    font-size: 21px;
+    font-size: 19px;
   }
   .main-title p {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 700px) and (max-width: 950px){
- .main-title {
-  margin-left: 40px;
+  .main-title{
+    margin-left: 5%;
+  }
+  .main-title h4{ 
+   font-size: 21px;
  }
  .main-title p {
-  margin-left: 16px;
+   font-size: 16px;
  }
 }
 @media screen and (min-width: 955px) and (max-width: 1090px){
@@ -257,8 +263,8 @@ header a {
     margin-left: 40px;
   }
 }
-/***la barre de recherche***/
 
+/***la barre de recherche***/
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,11 +353,11 @@ form span {
 }
 @media screen and (min-width: 220px) and (max-width: 340px){
  form {
-  margin-left: -48px;
+  margin-left: 7%;
  }
   .map-marker{
     height: 59px;
-    width: 55px;
+    width: 50px;
  }
  form i{
   font-size: 18px;
@@ -361,22 +367,24 @@ form span {
   height: 48px;
  }
  form button{
-   width: 3rem;
+   width: 2.5rem;
+   border-radius: 15px;
+   margin-left: -10px;
  }
  ::-webkit-input-placeholder{
-   font-size: 15px;
+   font-size: 14px;
  }
  ::-moz-placeholder{
-   font-size: 15px;
+   font-size: 14px;
  }
  :-ms-input-placeholder{
-   font-size: 15px;
+   font-size: 14px;
  }
  ::-ms-input-placeholder{
-   font-size: 15px;
+   font-size: 14px;
  }
  ::placeholder{
-   font-size: 15px;
+   font-size: 14px;
  }
  form span {
   display: none;
@@ -384,20 +392,20 @@ form span {
 }
 @media screen and (min-width: 345px) and (max-width: 610px) {
   form {
-    margin-left: -20px;
+    margin-left: 9%;
     margin-bottom: -25px;
     border-radius: 5px 10px 10px 5px;
   }
   .map-marker {
     height: 55px;
-    width: 57px;
+    width: 54px;
   }
   form i {
     font-size: 19px;
   }
   form input {
-    height: 44px;
-    width: 170px;
+    height: 42px;
+    width: 188px;
   }
   ::-webkit-input-placeholder {
     font-size: 18px;
@@ -415,7 +423,9 @@ form span {
     font-size: 18px;
   }
   form button {
-    width: 4rem;
+    width: 3.2rem;
+    margin-left: -10px;
+    border-radius: 15px;
   }
   form span {
     display: none;
@@ -428,8 +438,45 @@ form span {
 }
 @media screen and (min-width: 700px) and (max-width: 950px){
   form{
-    margin-left: -10px;
     margin-top: 30px;
+    margin-left: 3%;
+  }
+  for {
+    margin-left: 9%;
+    margin-bottom: -25px;
+    border-radius: 5px 10px 10px 5px;
+  }
+  .map-marker {
+    height: 60px;
+    width: 49px;
+  }
+  form i {
+    font-size: 17px;
+  }
+  form input {
+    width: 220px;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 17px;
+  }
+  ::-moz-placeholder {
+    font-size: 17px;
+  }
+  :-ms-input-placeholder {
+    font-size: 17px;
+  }
+  ::-ms-input-placeholder {
+    font-size: 17px;
+  }
+  ::placeholder {
+    font-size: 17px;
+  }
+  form button {
+    width: 7rem;
+  }
+  button span{
+    font-size: 17px;
+
   }
 }
 @media screen and (min-width: 955px) and (max-width: 1090px){
@@ -438,8 +485,8 @@ form span {
     margin-top: 35px;
   }
 }
-/***Filter***/
 
+/***Filter***/
 .filter {
   height: auto;
   display: -webkit-box;
@@ -528,8 +575,11 @@ form span {
   }
 }
 @media screen and (min-width: 700px) and (max-width: 950px){
-  .filter {
-    margin-left: 40px;
+  .filter{
+    margin-left: 5%;
+  }
+  .filter h5{
+    font-size: 15px;
   }
  }
  @media screen and (min-width: 955px) and (max-width: 1090px){
@@ -537,7 +587,8 @@ form span {
      margin-left: 40px;
     }
   }
-/***NOMBRE DE LOGEMENTS***/
+
+  /***NOMBRE DE LOGEMENTS***/
 .number-of-housings {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -590,15 +641,29 @@ p {
   }
 }
 @media screen and (min-width: 680px) and (max-width: 950px){
- .number-of-housings{
-   margin-left: 40px;
+  .number-of-housings {
+    margin-left: 5%;
+  }
+  .number-of-housings p {
+   font-size: 17px;
  }
+ .number-of-housings span {
+  height: 32px;
+  width: 32px;
+  margin-top: -2px;
+}
+
+.fa-info {
+  margin-left: 10px;
+  font-size: 12px;
+}
 }
 @media screen and (min-width: 955px) and (max-width: 1090px){
   .number-of-housings{
     margin-left: 45px;
   }
 }
+
 /***SECTION LES PLUS POPULAIRES ***/
 .aside-popular {
   width: 33.8%;
@@ -734,7 +799,7 @@ p {
     margin-left: 1px;
   }
   .room-popular-description{
-    width: 100%; 
+    width: 100%;
     height: 163px;
     margin-left: 3px;
     margin-bottom: 30px;
@@ -831,19 +896,23 @@ p {
 @media screen and (min-width: 700px) and (max-width: 950px){
   .aside-popular{
     float: none;
-    width: 1000px;
+    width: 760px;
+    margin-left: 11%;
+  }
+  .title-popular h2 {
+    font-size: 20px;
+    margin-left: 5%;
   }
   .title-popular i {
-    margin-left: -90px;
+    margin-left: -70px;
+    font-size: 18px;
+  }
+  .room-popular-description{
+    width: 80%;
+    margin-left: 10%;
   }
   .room-popular-description-img{
-    width: 180px;
-  }
-  .room-popular-star{
-    margin-left: 65px;
-  }
-  .title-room-popular{
-    width: 330px;
+    width: 210px;
   }
  }
  @media screen and (min-width: 955px) and (max-width: 1090px){
@@ -854,11 +923,13 @@ p {
      margin-bottom: 30px;
    }
    .popular{
-     width: 60%;
-     
+     width: 60%;  
    }
+   .title-popular h2 {
+    margin-left: 5%;
+  }
    .title-popular i{
-     margin-left: -80px
+     margin-left: -110px
    }
    .room-popular-description{
      width: 80%;
@@ -876,6 +947,11 @@ p {
   }
  }
  @media screen and (min-width: 1091px) and (max-width: 1209px){
+  .popular{
+    width: 82.5%;
+    margin-left: -25px;
+
+  }
   .title-popular h2 {
     font-size: 18px;
     margin-left: 15px;
@@ -883,7 +959,44 @@ p {
   .title-popular i {
     font-size: 20px;
   }
+  .room-popular-description-img{
+    width: 200px;
+  }
+  .room-popular-star{
+    margin-left: 5px;
+  }
+  .title-room-popular {
+    width: 130px;
+    font-size: 13px;
+  }
+  .paragraph-room-popular {
+    font-size: 12px;
+  }
+  .popular-blue-star,
+  .popular-grey-star {
+    margin-top: 30%;
+    font-size: 9px;
+  }
 }
+@media screen and (min-width: 1210px) and (max-width: 1480px){
+  .popular{
+    width: 82%;
+    margin-left: -35px;
+  }
+  .title-room-popular {
+    width: 130px;
+    font-size: 14px;
+  }
+  .paragraph-room-popular {
+    font-size: 12px;
+  }
+  .popular-blue-star,
+  .popular-grey-star {
+    margin-top: 30%;
+    font-size: 9px;
+  }
+}
+
 /***SECTION HEBERGEMENTS A MARSEILLE***/
 
 .hosting {
@@ -909,6 +1022,7 @@ p {
   font-size: 24px;
 }
 .location {
+  width: calc(30% - 20px);
   margin-left: 25px;
   margin-bottom: 40px;
   margin-right: 25px;
@@ -978,7 +1092,7 @@ p {
   .location {
     width: 85%;
     height: 210px;
-    margin: 15px 25px 15px;
+    margin: 15px 28px 15px;
     border-radius: 35px;
     -webkit-box-shadow: 0px 0px 3px #d8d8d8;
             box-shadow: 0px 0px 3px #d8d8d8;
@@ -991,7 +1105,7 @@ p {
     transition: 0.3s ease-in-out;
   }
   .location img {
-    height: 50px;
+    height: 110px;
   }
   .annonce h4 {
     font-size: 16px;
@@ -1011,20 +1125,19 @@ p {
 }
 @media screen and (min-width: 700px) and (max-width: 950px){
   .hosting {
-    width: 760px; 
+    width: 775px; 
     height: 950px;
-    margin-left: 1px; 
+    margin-left: -7px; 
     margin-top: 40px;
   }
   .location {
-    width: 270px;
+    width: 320px;
+    height: 217px;
     padding: 2px;
   }
   .hosting h2{
     margin-bottom: 20px;
-    margin-top: 0px;
-    margin-left: -20px;
-    font-size: 21px;
+    font-size: 20px;
   }
  }
  @media screen and (min-width: 955px) and (max-width: 1090px){
@@ -1034,27 +1147,27 @@ p {
      margin-left: 1px; 
    }
    .location {
-     width: 270px;
+     width: 277px;
+     height: 210px;
      padding: 2px;
    }
  }
- @media screen and (min-width: 1091px) and (max-width: 1209px){
+ @media screen and (min-width: 1091px) and (max-width: 1204px){
   .hosting {
-    width: 60%; 
+    width: 62.7%; 
     height: 670px;
     margin-top: 40px;
   }
   .location {
-    width: 155px;
+    width: 165px;
     height: 150px;
     padding: 2px;
   }
   .location img{
-    width: 100%;
     height: 65px;
   }
   .annonce h4 {
-    font-size: 14px;
+    font-size: 13px;
   }
   .annonce p {
     font-size: 12px;
@@ -1066,19 +1179,16 @@ p {
     font-size: 18px;
     }
  }
- @media screen and (min-width: 1210px) and (max-width: 1380px){
+ @media screen and (min-width: 1205px) and (max-width: 1330px){
   .hosting {
-    width: 61%; 
+    width: 61.5%; 
     height: 670px;
     margin-top: 40px;
   }
   .location {
-    width: 180px;
-    height: 180px;
+    width: 185px;
+    height: 200px;
     padding: 4px;
-  }
-  .location img{
-    width: 100%;
   }
   .annonce h4 {
     font-size: 14px;
@@ -1093,7 +1203,7 @@ p {
     font-size: 18px;
     }
  }
- @media screen and (min-width: 1310px) and (max-width: 1400px){
+ @media screen and (min-width: 1331px) and (max-width: 1480px){
   .hosting {
     width: 61%; 
     height: 670px;
@@ -1101,11 +1211,8 @@ p {
   }
   .location {
     width: 210px;
-    height: 180px;
+    height: 190px;
     padding: 4px;
-  }
-  .location img{
-    width: 100%;
   }
   .annonce h4 {
     font-size: 14px;
@@ -1120,16 +1227,17 @@ p {
     font-size: 18px;
     }
  }
- @media screen and (min-width: 1401px){
+
+@media screen and (min-width: 1481px) {
   .hosting{ 
    width: 64%;
    height: 670px;
   }
   .location{
-   width: 290px;
    height: 200px;
   }
 }
+
 /***SECTION LES ACTIVITES***/
 .activity {
   display: -ms-grid;
@@ -1189,7 +1297,7 @@ p {
   font-size: 17px;
   font-weight: 700;
 }
-@media screen and (min-width: 1110px) {
+@media screen and (min-width: 1091px) {
   .activity {
     -ms-grid-columns: 1fr 4rem 1fr 4rem 1fr 4rem 1fr;
     grid-template-columns: repeat(4, 1fr);
@@ -1461,8 +1569,9 @@ p {
     -ms-grid-row: 7;
     -ms-grid-column: 3;
   }
-  .activity-title{
-    margin-top: 130px;
+  .activity-title{ 
+    margin-top: 60px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 955px)and (max-width: 1090px) {
@@ -1522,7 +1631,7 @@ p {
 
 /****FOOTER****/
 footer {
-  height: 250px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1567,7 +1676,6 @@ footer {
 @media screen and (max-width: 720px){
   footer{
     height: 100%;
-    width: 700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1577,7 +1685,6 @@ footer {
             flex-direction: column;
   }
   .footer-first, .footer-second, .footer-third{
-    margin-left: 25px;
     margin-bottom: 2rem;
   }
   .title-footer{
@@ -1592,10 +1699,6 @@ footer {
 @media screen and (min-width:700px) and (max-width: 950px) {
   footer{
     width: 900px;
-    height: 350px;
-  }
-  .footer-first, .footer-second, .footer-third{
-    margin-left: -40px;
   }
   .footer-second{
     margin-left: -80px;
