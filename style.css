@@ -112,18 +112,6 @@ header a {
     grid-template-columns: auto 1fr auto auto !important;
         grid-template-areas: "symbol . menu butt" !important;
   }
-  .log {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .men {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-  }
-  .menu-righ {
-    -ms-grid-row: 1;
-    -ms-grid-column: 4;
-  }
 }
 @media screen and (max-width: 610px) {
   header {
@@ -273,7 +261,7 @@ form {
   overflow: auto;
 }
 .map-marker {
-  height: 61px;
+  height: 60px;
   width: 75px;
   background-color: #f2f2f2;
   border-radius: 25% 0% 0% 25%;
@@ -521,6 +509,7 @@ form span {
   height: 50px;
   margin: 10px 20px 10px 0px;
   border: 3px solid #f2f2f2;
+  border-left: 3px;
   border-radius: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -610,7 +599,7 @@ form span {
 }
 .fa-info {
   border-radius: 100%;
-  padding-top: 5px;
+  padding-top: 7px;
   margin-left: 12px;
   color: #0065fc;
   font-size: 15px;
@@ -1011,7 +1000,7 @@ p {
       flex-wrap: wrap;
   margin-left: 2%;
   background: #f2f2f2;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 15px;
 }
 .hosting h2 {
@@ -1650,10 +1639,10 @@ footer {
  margin-left: 2%;
 }
 .footer-second{
-  margin-left: -10px;
+  margin-left: 2%;
 }
 .footer-third{
-  margin-left: -20px;
+  margin-left: 2%;
 }
 .list-footer-first, .list-footer-second, .list-footer-third {
   height: 5rem;
@@ -1670,8 +1659,8 @@ footer {
   font-weight: 700;
 }
 .title-liste-item-footer {
-  margin-left: -35px;
-  font-size: 17px;
+  margin-left: -33px;
+  font-size: 18px;
 }
 @media screen and (max-width: 720px){
   footer{
@@ -1683,9 +1672,11 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+            margin-top: 3rem; 
+            
   }
   .footer-first, .footer-second, .footer-third{
-    margin-bottom: 2rem;
+    margin-left: 8%;
   }
   .title-footer{
     font-size: 18px;
@@ -1701,7 +1692,7 @@ footer {
     width: 900px;
   }
   .footer-second{
-    margin-left: -80px;
+    margin-left: -130px;
   }
   .footer-third{
     margin-left: -80px;
@@ -1712,15 +1703,15 @@ footer {
   .title-liste-item-footer{
     font-size: 17px;
   }
- }
- @media screen and (min-width: 955px)and (max-width: 1110px) {
+}
+@media screen and (min-width: 955px)and (max-width: 1110px) {
    footer{
      height: 410px;
    }
    .footer-first, .footer-second, .footer-third{
-    margin-left: 10px;
-  }
- }
+    margin-left: 50px;
+   }
+}
 @media screen and (max-width: 991px) {
   .footer {
     width: 100%;
