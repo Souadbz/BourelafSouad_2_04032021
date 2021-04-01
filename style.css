@@ -818,13 +818,13 @@ p {
 }
 .location {
   width: calc(33% - 50px);
-  height: calc (230px - 20px);
+  height: 213px;
   margin-left: 25px;
   margin-bottom: 40px;
   margin-right: 25px;
-  padding: 5px;
   border-radius: 25px;
   background: #fff;
+  box-sizing: border-box;
   -webkit-box-shadow: 0px 0px 2px white;
   box-shadow: 0px 0px 2px white;
   -webkit-transform: scale(1);
@@ -1203,7 +1203,6 @@ footer {
   }
   .footer-first, .footer-second, .footer-third{
     margin-left: 7%;
-    margin-top: 2
   }
   .footer-third{
     margin-top: -20px ;
