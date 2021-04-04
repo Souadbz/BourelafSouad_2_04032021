@@ -49,11 +49,7 @@ header a {
 }
 .menu-left-center {
   padding: 2rem;
-  font-weight: 500;
   text-align: center;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
 }
 .menu-left-center:hover {
   text-decoration: none;
@@ -343,11 +339,6 @@ form span {
     margin-top: 30px;
     margin-left: 3%;
   }
-  for {
-    margin-left: 9%;
-    margin-bottom: -25px;
-    border-radius: 5px 10px 10px 5px;
-  }
   .map-marker {
     height: 60px;
     width: 49px;
@@ -437,9 +428,9 @@ form span {
 }
 .list-filter :hover {
   color: #0065fc;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 .items-filter i {
   display: -webkit-box;
@@ -520,7 +511,6 @@ form span {
   border: 3px solid #f2f2f2;
 }
 .fa-info {
-  border-radius: 50%;
   padding-top: 7px;
   margin-left: 12px;
   color: #0065fc;
@@ -649,7 +639,6 @@ p {
   width: 130px;
   height: 140px;
   margin: 5px;
-  margin-top: 5px;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 20px 0px 0px 20px;
@@ -809,6 +798,11 @@ p {
   border-radius: 25px;
   padding: 15px;
 }
+.hosting :hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+}
 .hosting h2 {
   width: 81%;
   margin-left: 17px;
@@ -818,7 +812,7 @@ p {
 }
 .location {
   width: calc(33% - 50px);
-  height: 213px;
+  height: 223px;
   margin-left: 25px;
   margin-bottom: 40px;
   margin-right: 25px;
@@ -835,11 +829,12 @@ p {
   transition: 0.3s ease-in-out;
 }
 .location img {
-  width: 100%;
+  width: 96%;
+  margin: 6px;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 25px 25px 0 0;
-  height: 110px;
+  height: 115px;
 }
 
 .annonce {
@@ -865,11 +860,6 @@ p {
 .grey {
   color: #d3d3d3;
 }
-.hosting :hover {
-  -webkit-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  transform: scale(1.02);
-}
 .hosting h3 {
   margin-left: 32px;
   font-size: 18px;
@@ -891,16 +881,10 @@ p {
     border-radius: 35px;
     -webkit-box-shadow: 0px 0px 3px #d8d8d8;
     box-shadow: 0px 0px 3px #d8d8d8;
-    padding: 5px;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+    padding: 1px;
   }
   .location img {
-    height: 110px;
+    height: 108px;
   }
   .annonce h4 {
     font-size: 16px;
@@ -928,7 +912,7 @@ p {
   }
   .location {
     width: 320px;
-    height: 217px;
+    height: 227px;
     padding: 2px;
   }
   .hosting h2{
@@ -945,7 +929,7 @@ p {
   }
   .location {
     width: 277px;
-    height: 210px;
+    height: 230px;
     padding: 2px;
   }
 }
@@ -977,9 +961,9 @@ p {
   box-shadow: 0 0 20px #b1b1b14b;
   border-radius: 1rem;
   overflow: hidden;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .activity-image :hover {
   -webkit-transform: scale(1.01);
@@ -1025,14 +1009,6 @@ p {
     margin-bottom: 5px;
     padding-top: 20px;
     font-size: 21px;
-  }
-  .activity-image {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
   }
   .activity-image-detail-img{
     position: absolute;
