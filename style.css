@@ -1067,9 +1067,9 @@ p {
     grid-template-columns: repeat(4, 1fr);
     -ms-grid-rows: auto 0.5rem 17rem 0.5rem 2rem 0.5rem 0.5rem 0.5rem 2rem 0.5rem 14rem;
     grid-template-rows: auto 17rem 2rem 0.5rem 2rem 14rem;
-    -webkit-column-gap: 4rem;
-    -moz-column-gap: 4rem;
-    column-gap: 4rem;
+    -webkit-column-gap: 3rem;
+    -moz-column-gap: 3rem;
+    column-gap: 3.2rem;
     row-gap: 0.5rem;
     width: 94.7%;
     margin: 60px  2% 60px;
