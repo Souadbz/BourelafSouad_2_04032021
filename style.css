@@ -773,6 +773,23 @@ p {
     font-size: 12px;
   }
 }
+@media screen and (min-width: 610px) and (max-width: 900px){
+  .aside-popular{
+    float: none;
+  }
+  .title-popular h2 {
+    font-size: 20px;
+  }
+  .title-popular i {
+    font-size: 18px;
+  }
+  .room-popular-description{
+    width: 80%;
+  }
+  .room-popular-description-img{
+    width: 210px;
+  }
+}
 @media screen and (min-width: 610px) and (max-width: 650px){
   .aside-popular{
     width: 800px;
@@ -816,23 +833,7 @@ p {
   }
 
 }
-@media screen and (min-width: 610px) and (max-width: 900px){
-  .aside-popular{
-    float: none;
-  }
-  .title-popular h2 {
-    font-size: 20px;
-  }
-  .title-popular i {
-    font-size: 18px;
-  }
-  .room-popular-description{
-    width: 80%;
-  }
-  .room-popular-description-img{
-    width: 210px;
-  }
-}
+
 @media screen and (min-width: 901px) and (max-width: 1160px){
   .aside-popular{
     width: 1350px;
